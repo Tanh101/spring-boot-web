@@ -9,6 +9,7 @@ public class MyCodeJavaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyCodeJavaApplication.class, args);
+		
 	}
 
 }
