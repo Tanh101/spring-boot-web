@@ -19,4 +19,9 @@ public class HomeController {
         model.addAttribute("user", new User());
         return "signupForm";
     }
+
+    @GetMapping
+    public String showSignInForm(Model model) {
+        return "signinForm";
+    }
 }
