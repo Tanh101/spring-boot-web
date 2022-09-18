@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonCreator.Mode;
 
 @Controller
 public class HomeController {
-    @GetMapping("/")
+    @GetMapping("")
     public String homePage() {
         return "index";
 
@@ -17,11 +17,11 @@ public class HomeController {
     @GetMapping("/register")
     public String showSignUpForm(Model model) {
         model.addAttribute("user", new User());
-        return "signupForm";
+        return "signup_form";
     }
 
-    @GetMapping
-    public String showSignInForm(Model model) {
-        return "signinForm";
-    }
+    // @GetMapping
+    // public String showSignInForm(Model model) {
+    //     return "signinForm";
+    // }
 }
